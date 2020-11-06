@@ -1,0 +1,91 @@
+Commands for docker:
+docker hub is a repository of all official docker images that one can use in their environment. 
+docker pull imagename: To pull an image from the docker hub. 
+
+For mysql database:
+docker pull mysql
+docker image ls: lists all the images that are available in UR Docker engine. 
+docker run --name example -e MYSQL_ROOT_PASSWORD=mysql@123 -d mysql
+Creates the docker container for mysql database. 
+docker container ls: lists all the containers that are installed in ur docker client
+docker container ls -aq:Lists all the ids of the containers
+docker start containerid
+docker exec example -it mysql -u root -p mysql@123
+
+Docker Features:
+Easy and faster integration. 
+Increases productivity. 
+Application abstraction: U dont have to worry about other applications and its containers. 
+Swarms: Clustering and scheduling tools for containers. It uses Docker API as its front end which helps to use various tools to control it. It allows us to maintain a cluster of docker hosts as a single Virtual host. 
+
+Architecture:
+3 parts: Docker client, Docker Host, Docker Registry. 
+
+All these things are managed with the help of Docker Daemon. 
+Docker Daemon is a software that runs on the host OS. It is responsible for running the containers to manage the docker services. It communicates with other Daemons. It offers various docker objects like images, containers, networking and storages. 
+
+Docker follows Client-server architecture.
+Docker Client is the one that consumes the docker images. It uses Docker CLI Commands, API calls to communicate with docker daemon. When the clients runs the docker commands, it will send these requests to the Docker Daemon and in turn that will be responsible to take actions appropriately. 
+Docker clients use CLI to communicate with the deamon. 
+Some of the commands:
+pull, build, run, stop, start, exec, ls, and many more. 
+
+Docker Host: is a part of UR machine that provide the environment to execute and run the applications. The Docker host contains the Docker deamon, images, containers, networks etc. 
+
+Docker Registry is the one that manages and stores the docker images globally. Docker hub is the public registry for all docker images that can be pulled and installed in ur environment. 
+However, Large scale enterprises can own their own private registry to serve their own clients and other stack holders within the organization. 
+
+
+Docker Images and Containers: 
+Images are readonly binary templates used to create the docker containers. It can be stored in the public registry or the private registry. It also contains the metadata required to provide the ability of pulling and managing the docker images. 
+
+Docker Containers: Running instances of Docker images. It is the one that holds the entire package of application, dependencies, libraries that make the app run as one unit. It consumes less resources and shares the OS like a process instance. It means containers and other programs of the machine will share the same hard ware resources and the OS. 
+
+Docker Storages:Used to store only the data on the container. It contains components like data volumes, Storage plugins and Directory mounts to manage the data. The data could be raw or formatted data. 
+
+Software requirements of Docker:
+64 bit OS is primary requirement. It also requires a Linux kernel which is the part of the installation process of docker. 
+Docker is available for desktop versions on Windows and Mac machines. Recently even Linux versions are also provided with User interfaces. 
+
+To know the version of the Docker: docker --version. 
+To know the kernel version of the Linx : uname -r
+
+Docker in Linux: 
+U can install the snap or apt command. 
+To check if docker is installed in unix:
+sudo docker run hello-world: Which pulls the sample hello-world image and installs a container and executes it. 
+
+on WIndows:
+U have a Docker client Desktop to install docker in ur machine. 
+U should also install the VS code plugin for docker to allow to run the docker commands from the VS code itself. This feature is available in Windows and Mac VS code. 
+
+Lab part:
+Install docker desktop for windows. 
+U might install Linux kernel v2. 
+Restart the machine. 
+----------------------------
+Open the Cmd and run the following command: docker pull mysql: get the mysql Docker image from the docker hub. 
+docker image ls: lists all the docker images currently pulled in ur machine. 
+
+If U run the docker image, it creates a container and runs the image thro the container. Creating a container or running the Docker image is same. 
+
+To list all the containers currently in ur machine:
+docker container ls -a : Lists all the containers in ur machine. 
+docker container ls: Lists only started containers in ur machine. 
+
+To run an image U should use run command.
+docker run --name example -e MYSQL_ROOT_PASSWORD=urpwd -d mysql
+--name: Give a easy readable name to Ur container. 
+-e environment variables to set. MYSQL_ROOT_PASSWORD is allowing to change the pwd for UR MySql Instance. 
+-d Run the container in the background and print the container ID that is generated by the Deamon. 
+
+
+How to create an Angular App and place it in a docker?
+Install Nodejs Environment.
+npm install -g @angular/cli : install the Angular/Cli globally in ur pc.. 
+Now U can create new ang app:
+ng new appname: let the appname be in smaller case. U can combine 2 or more words with -. 
+cd appname: move to the directory of the angular application.
+ng serve --open: to run the ang application
+
+
