@@ -80,5 +80,16 @@ Steps for working with VCS:
 U need to install Git on UR Machine. 
 git-scm.com will help in downloading the Git software in ur machine. 
 
+--------------------------------
+Create a local repository
+Add files to it. 
+
+Add the files to UR Git Stage. 
+Commit the files to the Git stage. 
+
+Push the Git state to the Central cloud repository which would have been created in Github, BitBucket or any other Git repository cloud servers. 
+----------------------------------------------------------
+Branching and Merging. 
+
 
 
