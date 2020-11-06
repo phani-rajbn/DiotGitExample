@@ -1,0 +1,84 @@
+Git is an open source distributed version control system. It is designed to handle minor to major changes to projects with high effeciency and speed. 
+
+What is Version Control?
+VC is a  management of changes that U make to documents, computer programs, large websites and collections of information. every modification and change U make to Ur docs are called versions. 
+
+Version control systems(VCS) maintains snapshots on every modifications including  removal and additions that U create in ur project. At any given point U have an option to view those changes, go back and forth depending on ur requirement and finally commit to the changes. However even after commiting the changes, U can still keep the backlog of all the modifications done to the project. 
+
+Why VC? 
+Coloborations: Does not work all the time, if more no of people are involved in the working of the project, keeping track of latest data would be a problem, so we need a platform that keeps track of all the changes made and the people who made those changes. 
+Storing versions: In VCS, the snapshots of all kinds of modifications are kept in track and are properly documented and stored.  Each version of the data could be named accurately and can be retrived very easily. 
+Backups of the data/files could well be obtained with less effort. 
+
+Advantages:
+1. A complete long term change history of every file is well maintained. This includes info like author, date, written notes(about the reason for the change).
+2. Branching and merging helps in multiple teams to work concurrently. When U create branches in the VCS, each branch can work paralelly without depending on the other branch or the root.(The main source is called root). After the approval of the changes, the branch could be merged back into the root effectively and complete the process of commitment. 
+3. Tracability: U should be able to identify the changes that has been made in the document/software and connect it to external project management tools like Jira and should be able to manage each change with a message defining the purpose and intent of the change. 
+
+
+Git is one software that performs these operations in the form of VCS. 
+It is one that manages these capabilities of VC with high productivity and collaborations. 
+other similar software are BitBucket from atlasian. 
+Git is the most widely used Modren VCS. It was designed by Linus Torvalds, the creator of Linux OS kernel. 
+Git the best example of DVCS(distributed version control system)
+Features: 
+High performance. 
+Better security. 
+Flexibility
+Speed and 
+Open source
+
+Benifits of Git:
+Saves Time.
+Track changes
+Undo unwanted coding
+Offline working
+-------------------------GitHub------------------------------------------
+Github is a Git's repository hosting service. It is the place where the data is stored and managed. 
+
+Git vs. Github:
+Git is DVCS tool that manages the data. 
+GitHub is a cloud based tool to store the code and push the code from the computer and pull the code from the cloud to ur computer. 
+
+Git is focused on version control and code sharing and github is purely a centralized source code hosting environment. 
+
+Git is command line tool and Github is adminstered using web. 
+
+How git works:
+U will create a repository in GitHub which becomes the central place of UR data and source data. 
+U install git in ur machine that will have an envronment called Staging area where Ur code from the github could be pulled or pushed. 
+U will create Working directory in ur local machine  and using git commands U should be able to get the data or commit the data from the working directory to the stage area. 
+
+
+Work flow of a git:
+1. U modify a file in the working directory
+2. U add these files to the staging area.
+3. U commit the operation that moves the file from the staging area to the git repository. After the push operation, the changes will be permanently stored into the github. 
+
+Terminologies: 
+repository: A collection of files that make up a project. Any folder in ur local storage can be converted to a git repository and shared across the team. 
+
+Branch: A copy of the repository which can allow team members to modify the copy without affecting the main repository. Any changes made to the branch will finally combined(merge) to the main or master branch. 
+
+Clone : Cloning is to create a copy of files in the local machine. A cloned copy is used to edit the files using a Custom IDE or a tool depending on what kind of data U R manipulating. 
+
+Fork: Forking  a repository is to create a copy of repository of another user into ur account and edit the files without affecting UR main repository or the owner's repository. If U R asked to modify changes to another repository which is not owned by U, then the owner would create a fork of the repository and share it to U. 
+
+Commit: Once the changes made are completed, developers mark the changes as complete by commiting the relevant files. 
+
+Push: Changes made by the developer resides in the local repository. They will be ready to be moved to the remote branch of the repository. The process of pushing the local changes to the remote location is called "PUSH"
+
+Pull: Allows to grab the latest changes that has been made into the remote repository of a perticular branch. If the changes are commited by user, the other collaborators can pull the latest copy of the repository.
+
+Pull request: A pull request is used to request the owner of a specific branch to take up changes of a perticular branch into the requested branch. 
+
+Merge: On approving the pull request, the code of one branch combines into the other. This process is called as MERGING. 
+
+Fetch: Fetch is required when U want to get the latest changes to be downloaded into the local repository. It is different from the Pull as in this case, only the changes made are pulled , unlike the whole repository that is downloaded while U pull. 
+
+Steps for working with VCS:
+U need to install Git on UR Machine. 
+git-scm.com will help in downloading the Git software in ur machine. 
+
+
+
