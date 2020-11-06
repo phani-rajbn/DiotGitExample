@@ -92,4 +92,16 @@ Push the Git state to the Central cloud repository which would have been created
 Branching and Merging. 
 
 
+Create a folder called Web App:
+Write 2 Html files one as Home.html and other as About.html. 
+Create a repository in the github called WebApp
+Push the contents of the local folder to the Web App
+Create a branch called Register
+In the Register branch, create a file called Register.html, with inputs to add firstname, lastname, email, dateofbirth and on click of button, the data entered should be displayed in the form. 
+Push the branch into the cloud. 
+Merge the branch to the master. 
+
+Tommorow: 8: 30 AM to 11: 00 AM. 
+
+
 
