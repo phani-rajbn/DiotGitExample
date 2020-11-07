@@ -1,0 +1,86 @@
+ELK Stack and Kibana :
+ELK stack is a collection 3 open source products: Elasticsearch, Logstash and Kibana. All the 3 products are managed and maintained by a company Elastic. 
+
+E: Elastic Search, used to store the Logs
+L: LogStash: Used for shipping and processing the storing logs. 
+K: Kibana a Visualization tool(Web Interface) which is hosted thro Apache or NginX. 
+
+ELK is designed to allow sues to talk to the data from any source, in any format and search, analyse and visualize the data in real time. It provides a centralized logging which is usefull when attempting to identify problems from the servers or applications. It allows to search all ur logs in a single place. It helps to find the issues that occur in multiple servers by connecting to their logs at any specific point of time. 
+
+The whole Stack is designed to keep track of the data in the form of logs. Logs contain info about ur product as well as issues related to the product while it is in production. Any issue or info about ur product data will be stored in these logs. Elasticsearch is a product which stores these kinds of logs and help in search management. 
+Logstarh is responsible for data processing of ur logs. 
+Kibana is for presentation of the data in the form of charts. graphs and many other UI based Visualization. 
+
+What is Elasticsearch?
+Elasticsearch is a NoSQL database based on Lucene search engine. It is built with restfull apis. It is simple to deplly and maximum reliability and easy management.  It offers advanced queries to perform detail analysis of ur data and stores all the data centrally. It is helpfull for quick searches of ur documents. Most of the Data Analytic Applications use Elasticsearch as their data base basically for complex searches. 
+Features: 
+Open source search server written in Java. 
+Uses indexing to search any kind of heterogeneous data. 
+has REST API web interface with JSON output. 
+Full Text search
+NRT(Near Real Time) search
+Shared, replicated and searchable JSON document store. 
+Multi language support and Geolocation support. 
+
+What is Logstash?
+Logstash is the data collection pipeline tool. It collects data inputs and feeds into the elastic search. It gathers all types ofdata from different sources and make it available for further usage. Its main pirpose is to cleanse the data and rearrange all ur data for Analytical and Visualization purposes. Technically we call this process Democratization. 
+It contains 3 components: 
+Input: passes the logs to process them into machine understandable formats, 
+filters: set of conditions to perform a perticular action or event.
+Output: The compnent that gives the processed data or logs. 
+
+All these components use Message queueing for their interactions. MQs will offer centralized data processing mechanism. 
+
+
+What is Kibana?
+Data Visualization software which completes the ELK stack. This tool is used for visualizing Elastic docs and developers to have a quick insight into it. Kibana dashboard offers various interactive diagrams, geospatical data, graphs and images to visualize the complex queries processed by Elasticsearch. 
+It provides the UI for search, view and interact with data stored in Elasticsearch directories. It helps in performing data analytics and present Ur data as tables, charts, graphs and maps. 
+some of the common searching types in Kibana are:
+Free text searches: Search for specific string
+Field level searches: specific strings of a certain field/fields
+Logical statements: Combine searches into a logical statement.
+Proximity searches: Used to search data based on a certain charecter Proximity. 
+
+Features:
+Powerfull dashboard capable of visualizing the indexed information from the elastic clustor. 
+Enables real time search of the indexed information.
+Search/View/Interact with data stored in the Elasticsearch.
+Executes queries on data and visualize the results in charts, tables, graphs and maps
+Permits saving of the dashboard and managing multiple dashboards. 
+
+Why Log analysis required in Cloud computing?
+In any cloud based environment, performance and isolation is very important for the success of the Product. The performance of the vms in the cloud may vary on various factors like loads, active users, location, type of accessing and many more. reliability is very important in Cloud. 
+The log analysis platforms like ELK will be used to monitor all the above issues as well as rpocess the OS logs, NGINX, IIS sever log for web traffic analysis, app logs, and logs that are placed in AWS or any other cloud based servers. 
+It brings the DevOps Engineers, Sys Admins and other important Stake Holders to a common table and help in management of the data and the product in cloud. 
+
+Netflix, LinkedIn, Medium, TripWire, IHS are some of the companies that use ELK for their data analytics and Visualization. 
+
+Advantages:
+Works best when logs from various apps of an organization cover under a single ELK instance. 
+Rapid Onpemise installation. 
+provides insights for a single instance and eliminates the need to log into different log data sources.
+Elastic offers a host of languages including Ruby, Python, PHP, Perl, .NET, Java as well as JS. 
+U have libraries for different programming and scripting languages. 
+
+Disadvantages: It becomes extremely difficult to handle different components from various different sources and will be extermely difficult when we try to move to a complex environment. 
+There is no concept called TRIAL AND ERROR. It is more about ur experience. The More U do, the more U learn along the way of Ur data indexing and search. 
+
+----------------Monday Examination--------------------------------------------
+Visual Studio Code. IDE for developing Angular App
+Nodejs
+Docker for Desktop. 
+Angular CLI download.
+
+U should remember the commands:
+1. npm install -g @angular/CLI
+2. ng new appname
+3. cd appname
+4. ng serve --open
+
+
+
+
+
+
+
+
